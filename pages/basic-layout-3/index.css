@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-primary: #15133c;
+  --bg-secondary: #73777b;
+  --bg-secondary-2: #ec994b;
+  --bg-secondary-3: #00092c;
+  --bg-secondary-4: #38777e;
+  --bg-secondary-5: #2a0944;
+  --clr-primary-text: #1c0a00;
+  --clr-text-2: #fff;
+}
+.header {
+  height: 80px;
+  background-color: var(--bg-primary);
+  color: var(--clr-text-2);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  height: 80px;
+  background-color: var(--bg-secondary);
+  color: var(--clr-text-2);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  background-color: var(--bg-secondary-2);
+  height: 300px;
+}
+.container > * {
+  flex: 1;
+}
+.main-container > * {
+  background-color: var(--bg-secondary-3);
+}
+.main-container > * {
+  height: 50%;
+  padding: 0.5rem;
+}
+.article,
+.content {
+  height: 100%;
+  color: var(--clr-text-2);
+  background-color: var(--bg-secondary-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.sidebar {
+  background-color: var(--bg-secondary-5);
+  color: var(--clr-text-2);
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.footer {
+  background-color: var(--clr-primary-text);
+  display: flex;
+  justify-content: end;
+  color: var(--clr-text-2);
+  text-transform: capitalize;
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 90%;
+  margin: 50px auto;
+  background-color: aqua;
+  display: grid;
+  padding: 10px;
+  grid-template-areas:
+    "one one two two"
+    "three four five five";
+  gap: 10px;
+}
+div {
+  background-color: blanchedalmond;
+  padding: 3rem;
+}
+.div1 {
+  grid-area: one;
+}
+.div2 {
+  grid-area: two;
+}
+.div3 {
+  grid-area: three;
+}
+.div4 {
+  grid-area: four;
+}
+.div5 {
+  grid-area: five;
+}

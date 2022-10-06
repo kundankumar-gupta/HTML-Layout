@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size-16: 16px;
+  --base-color: #06283d;
+  --base-text-color: #fff;
+  --base-light-color: #256d85;
+  --base-dim-color: #47b5ff;
+}
+
+body {
+  width: 100vw;
+  background-color: #fff;
+}
+
+.header {
+  background-color: var(--base-color);
+  color: var(--base-text-color);
+}
+
+.basic-layout {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  background-color: beige;
+}
+
+.nav-container {
+  flex: 1;
+  background-color: var(--base-light-color);
+  color: var(--base-text-color);
+  padding: 1rem;
+}
+.nav-container > .nav-list {
+  list-style: none;
+}
+
+.nav-container > .nav-list > li {
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-16);
+}
+
+.container {
+  flex: 4;
+  padding: 1rem;
+  background-color: var(--base-dim-color);
+  color: var(--base-text-color);
+}
+
+.container > h3 {
+  padding: 0.6rem;
+  font-size: 45px;
+}
+
+.container > p {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  font-size: var(--font-size-16);
+}
+
+footer {
+  background-color: var(--base-color);
+  color: var(--base-text-color);
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-size-16: 20px;
+    --base-color: #7d6e83;
+    --base-text-color: #eef1ff;
+    --base-light-color: #d0b8a8;
+    --base-dim-color: #dfd3c3;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0.2rem;
+  }
+}

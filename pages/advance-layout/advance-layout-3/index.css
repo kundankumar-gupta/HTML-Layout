@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 70%;
+  margin: 50px auto;
+  background-color: grey;
+  padding: 2px;
+
+  display: grid;
+  grid-template-areas:
+    "one two three"
+    "four five six";
+  gap: 10px;
+}
+div {
+  padding: 3rem;
+
+  background-color: white;
+  text-align: center;
+}
+.div1 {
+  grid-area: one;
+}
+.div2 {
+  grid-area: two;
+}
+.div3 {
+  grid-area: three;
+}
+.div4 {
+  grid-area: four;
+}
+.div5 {
+  grid-area: five;
+}
+.div6 {
+  grid-area: six;
+}

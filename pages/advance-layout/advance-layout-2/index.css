@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 70%;
+  margin: 70px auto;
+
+  display: grid;
+  grid-template-areas: " one two three";
+
+  gap: 5px;
+}
+div {
+  padding: 3rem;
+  background-color: tan;
+}
+.div1 {
+  grid-area: one;
+}
+.div2 {
+  grid-area: two;
+}
+.div3 {
+  grid-area: three;
+}

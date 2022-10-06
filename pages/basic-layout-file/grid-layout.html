@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-laayout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 75%;
+        margin: 50px auto;
+        border: 1px solid grey;
+        color: white;
+        display: grid;
+        grid-template-areas:
+          "one one one one"
+          "two three four five"
+          "six six six five"
+          "seven seven seven seven";
+
+        grid-gap: 20px;
+      }
+      .div1 {
+        background-color: #ff4757;
+        grid-area: one;
+      }
+      .div2 {
+        background-color: #2ed573;
+        grid-area: two;
+      }
+      .div3 {
+        background-color: #1e90ff;
+        grid-area: three;
+      }
+      .div4 {
+        background-color: #5353ed;
+        grid-area: four;
+      }
+      .div5 {
+        background-color: #2f3542;
+        grid-area: five;
+      }
+      .div6 {
+        background-color: #ffa502;
+        grid-area: six;
+      }
+      .div7 {
+        background-color: #00d2d3;
+        grid-area: seven;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="div1">header</div>
+      <div class="div2">box1</div>
+      <div class="div3">box2</div>
+      <div class="div4">box3</div>
+      <div class="div5">sidebar</div>
+      <div class="div6">main-content</div>
+      <div class="div7">footer</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid {
+  width: 90%;
+  margin: auto;
+  background-color: azure;
+  display: grid;
+  padding: 2rem;
+  gap: 1rem;
+  grid-template-areas:
+    "one one two two"
+    "three four four five";
+}
+div {
+  padding: 3rem;
+  background-color: aqua;
+}
+.grid-item-1 {
+  grid-area: one;
+}
+.grid-item-2 {
+  grid-area: two;
+}
+
+.grid-item-3 {
+  grid-area: three;
+}
+
+.grid-item-4 {
+  grid-area: four;
+}
+
+.grid-item-5 {
+  grid-area: five;
+}
